@@ -66,16 +66,20 @@ return {
     cursor = { fg = on_surface },
     cursor_line = { bg = container_bright },
     selection = { fg = on_inverse_surface, bg = inverse_surface },
+    visual = { fg = on_inverse_surface, bg = inverse_surface },
     line_no = { fg = outline },
     line_no_above = { fg = outline },
     line_no_below = { fg = on_surface_variant },
-    visual = { fg = on_inverse_surface, bg = inverse_surface },
+    color_column = { bg = container },
     inc_search = { fg = on_primary, bg = primary },
     search = { fg = on_primary_container, bg = primary_container },
     statusline = { fg = container },
-    non_text = { fg = outline_variant },
     separator = { fg = outline },
     folded = { fg = on_surface_variant },
+
+    -- tabline
+    tabline = { fg = on_surface_variant, bg = container_dim },
+    tabline_sel = { fg = on_surface, bg = container_bright },
 
     -- pmenu
     menu_bg = { fg = on_surface, bg = container },
@@ -84,6 +88,7 @@ return {
 
     -- text
     normal = { fg = on_surface, bg = surface },
+    non_text = { fg = outline_variant },
     special_byte = { fg = on_error, bg = error },
 
     -- syntax

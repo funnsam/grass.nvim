@@ -4,6 +4,7 @@ local colors = require("grass.palette")
 
 M.setup = function()
     return {
+        -- ui
         Cursor = colors.cursor,
         lCursor = colors.cursor,
         CursorIM = colors.cursor,
@@ -13,27 +14,35 @@ M.setup = function()
         LineNr = colors.line_no,
         LineNrAbove = colors.line_no_above,
         LineNrBelow = colors.line_no_below,
+        ColorColumn = colors.color_column,
         Search = colors.search,
         IncSearch = colors.inc_search,
         CurSearch = colors.inc_search,
-        Tabline = colors.tabline,
-        NonText = colors.non_text,
         WinSeparator = colors.separator,
         FloatBorder = colors.separator,
         Folded = colors.folded,
 
+        -- tabline
+        TabLine = colors.tabline,
+        TabLineSel = colors.tabline_sel,
+        TabLineFill = colors.tabline,
+
+        -- pmenu
         Pmenu = colors.menu_bg,
         PmenuSel = colors.menu_sel,
         PmenuThumb = colors.menu_thumb,
         PmenuBorder = colors.separator,
 
+        -- text
         Normal = colors.normal,
         NormalSB = colors.normal,
         NormalFloat = colors.normal,
         StderrMsg = colors.normal,
         StdoutMsg = colors.normal,
+        NonText = colors.non_text,
         SpecialKey = colors.special_byte,
 
+        -- syntax
         Comment = colors.comment,
         SpecialComment = colors.comment,
         Keyword = colors.keyword,
@@ -62,12 +71,14 @@ M.setup = function()
         Number = colors.number,
         Boolean = colors.boolean,
 
+        -- diagnostics
         Error = colors.diag_error,
         ErrorMsg = colors.diag_error,
         WarningMsg = colors.diag_warn,
         OkMsg = colors.diag_info,
         Question = colors.diag_info,
 
+        -- diff text
         Added = colors.diff_add,
         Changed = colors.diff_change,
         Removed = colors.diff_delete,
@@ -90,6 +101,16 @@ M.setup = function()
         zigVarDecl = colors.keyword,
         zigExecution = colors.keyword,
         ["@lsp.type.enumMember.zig"] = colors.identifier,
+
+        -- barbar
+        BufferCurrentSign = { fg = colors.separator.fg, bg = colors.tabline_sel.bg },
+        BufferCurrentTarget = { fg = colors.primary, bg = colors.on_primary },
+
+        BufferInactiveSign = colors.separator,
+        BufferInactiveTarget = { fg = colors.on_primary, bg = colors.primary },
+
+        BufferVisibleSign = colors.separator,
+        BufferVisibleTarget = { fg = colors.on_primary, bg = colors.primary },
     }
 end
 
