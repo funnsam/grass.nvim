@@ -112,6 +112,12 @@ M.setup = function()
 
         BufferVisibleSign = colors.separator,
         BufferVisibleTarget = { fg = colors.on_primary, bg = colors.primary },
+
+        -- telescope
+        TelescopeBorder = colors.separator,
+        TelescopeNormal = colors.menu_bg,
+        TelescopeSelection = colors.menu_sel,
+        TelescopeTitle = colors.normal,
     }
 end
 
