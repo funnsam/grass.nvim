@@ -47,6 +47,7 @@ M.setup = function()
         SpecialComment = colors.comment,
         Keyword = colors.keyword,
         Keywords = colors.keyword,
+        Structure = colors.keyword,
         Statement = colors.keyword,
         Conditional = colors.keyword,
         Repeat = colors.keyword,
@@ -62,7 +63,6 @@ M.setup = function()
         Function = colors.func,
         Special = colors.func,
         Identifier = colors.identifier,
-        Structure = colors.identifier,
         Label = colors.identifier,
         Type = colors.type,
         Constant = colors.constant,
@@ -101,6 +101,7 @@ M.setup = function()
         zigVarDecl = colors.keyword,
         zigExecution = colors.keyword,
         ["@lsp.type.enumMember.zig"] = colors.identifier,
+        ["@lsp.type.namespace.zig"] = colors.identifier,
 
         -- barbar
         BufferCurrentSign = { fg = colors.separator.fg, bg = colors.tabline_sel.bg },
