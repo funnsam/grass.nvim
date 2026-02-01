@@ -57,10 +57,11 @@ return {
     on_warning = on_warning,
 
     -- mode colors
-    mode_insert = { fg = on_secondary, bg = secondary_bright },
-    mode_visual = { fg = on_tertiary, bg = tertiary_bright },
+    mode_normal = { fg = on_inverse_surface, bg = outline },
+    mode_insert = { fg = on_primary, bg = primary },
+    mode_visual = { fg = on_secondary, bg = secondary_bright },
     mode_replace = { fg = on_error, bg = error },
-    mode_command = { g = on_warning, bg = warning },
+    mode_command = { fg = on_tertiary, bg = tertiary_bright },
 
     -- ui
     cursor = { fg = on_surface },

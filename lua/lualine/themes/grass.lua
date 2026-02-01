@@ -11,7 +11,7 @@ end
 
 return {
     normal = {
-        a = { fg = colors.on_primary, bg = colors.primary, gui = "bold" },
+        a = bold(colors.mode_normal),
         b = { fg = colors.on_surface, bg = colors.outline_variant },
         c = { fg = colors.on_surface, bg = colors.container_bright },
     },
@@ -19,12 +19,12 @@ return {
         a = bold(colors.mode_insert),
     },
     visual = {
-        a = bold(colors.mode_visual)
+        a = bold(colors.mode_visual),
     },
     replace = {
-        a = bold(colors.mode_replace)
+        a = bold(colors.mode_replace),
     },
     command = {
-        a = bold(colors.mode_command)
+        a = bold(colors.mode_command),
     },
 }
