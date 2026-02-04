@@ -73,7 +73,7 @@ return {
     line_no_below = { fg = on_surface_variant },
     color_column = { bg = container },
     inc_search = { fg = on_primary, bg = primary },
-    search = { fg = on_primary_container, bg = primary_container },
+    search = { fg = on_inverse_surface, bg = outline },
     statusline = { fg = container },
     separator = { fg = outline },
     folded = { fg = on_surface_variant },
