@@ -77,6 +77,7 @@ return {
     statusline = { fg = container },
     separator = { fg = outline },
     folded = { fg = on_surface_variant },
+    ui_container = { bg = container },
 
     -- tabline
     tabline = { fg = on_surface_variant, bg = container_dim },

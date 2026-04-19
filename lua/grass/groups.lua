@@ -36,7 +36,7 @@ M.setup = function()
         -- text
         Normal = colors.normal,
         NormalSB = colors.normal,
-        NormalFloat = colors.normal,
+        NormalFloat = colors.ui_container,
         StderrMsg = colors.normal,
         StdoutMsg = colors.normal,
         NonText = colors.non_text,
